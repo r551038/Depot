@@ -1,6 +1,8 @@
 Program will add and remove users from the local administrators group
 Files
-AdminControl.vbs is the core of the PAM solution
+AdminControl.vbs is the core of the PAM solution. Please that it's a fully functional solution, however as it stands its lacking automation
+in regards to tasks and importing datasources, this are currently flat files that require manual creation as noted.
+
 AccessAuditv3.bat generates an exception report for accounts that were added but were not issued  remove request.
 
 In current development state AdminControl.vbs requires to be manually run from the command prompt with an account that has the required privilages for both account additions and removals.
@@ -34,6 +36,7 @@ users to be added or removed are entered during runtime
 administrator name and domain are taken from environment only the password must be supplied during runtime
 this is to prevent unanthorized account modifications incase pc was left unattended
 This portion should be modified to extract the account and password from a vault.
+account additions and removals are also noted in the event logs of the host action was performed on
 
 output
 tickectnumber-action-domain-user.lst: contains users
