@@ -1,0 +1,18 @@
+run from command prompt
+servers can be entered by three ways
+1) from the command prompt as a argument
+2) during runtime
+3) via file server.lst
+example for single server as argument
+cscript  CompPerfdiag.vbs servername
+
+output log file
+servername-Diag.log
+contains any process that are using 5%+ of the cpu time
+including current cpu %, virtual memory size,thread,handle,readxfer,writexfer counts
+if any of these process are service related pid along with associated service is noted
+current available memory is listed and is flagged only if free mem is less the 65MB
+any services that are set to auto start and not running
+network errors, net work errors above 1/sec are detailed
+any disks that have less then 10% free or queue above 0 are also detailed
+uptime for server

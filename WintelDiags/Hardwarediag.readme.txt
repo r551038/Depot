@@ -1,0 +1,16 @@
+run from command prompt
+servers can be entered by three ways
+1) from the command prompt as a argument
+2) during runtime
+3) via file server.lst
+example for single server as argument
+cscript  Hardwarediag.vbs servername
+
+
+output file:servername-HWRpt.log
+servername,model,manufacturer,domain,domainrole
+number of cpu and physical memory
+bios info
+memory details
+logical disk info
+and all other devices, duplicates are surpressed unless this a an issue for a particular device
